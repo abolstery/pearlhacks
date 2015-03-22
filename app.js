@@ -40,7 +40,7 @@ app.controller('expCtrl', function ($scope, $timeout) {
 				$scope.currImg = 2;
 				$scope.instruction = "The victim and attacker are in an innocent study session";
 				$scope.exists = true;
-			}, 6000);
+			}, 8000);
 			$timeout(function(){
 				$scope.currImg = 3;
 				$scope.instruction = "As time passes, the conversation becomes more flirty...";
@@ -48,12 +48,12 @@ app.controller('expCtrl', function ($scope, $timeout) {
 									  verbal or physical, a perpetrator's actions can be classified \
 									  as sexual harassment";
 				$scope.exists = false;
-			}, 11000);
+			}, 13000);
 			$timeout(function(){
 				$scope.currImg = 4;
 				$scope.instruction = "... and progresses into the first touch";
 				$scope.exists = true;
-			}, 16000);
+			}, 18000);
 		} else if($scope.currImg == 4 && $scope.code == 39) { //incr img
 			$timeout(function(){
 				$scope.currImg = 5;
@@ -68,7 +68,7 @@ app.controller('expCtrl', function ($scope, $timeout) {
 				$scope.currImg = 6;
 				$scope.instruction = "The scene turns violent. Touch your neck to continue.";
 				$scope.exists = true;
-			}, 6000);
+			}, 8000);
 		} else if($scope.currImg == 6 && $scope.code == 38) { //incr img
 			$timeout(function(){
 				$scope.currImg = 7;
@@ -122,6 +122,9 @@ app.config(['$routeProvider',
       }).
       when('/gethelp', {
       	templateUrl: 'partials/help.html'
+      }).
+      when('/demo', {
+      	templateUrl: 'partials/demo.html'
       }).
       otherwise({
         redirectTo: '/'

@@ -13,6 +13,15 @@ body {
     height:100%;
 }
 
+.italic {
+	font-style:italic;
+}
+
+.leftMargin {
+	margin-top: 20px;
+	margin-left: 25%;
+}
+
 .subheader {
 	margin-bottom: 15px;
 	margin-top: 15px;
@@ -42,6 +51,11 @@ body {
 
 div:focus {
 	outline: none;
+}
+
+.mainBox {
+	margin-top: 40px;
+
 }
 
 img {
