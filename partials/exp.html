@@ -3,14 +3,14 @@
 
 <div id="content">
 	<div id="box" class="imgbox" ng-keydown="buttonBehavior($event)" tabindex="0">
-		<div class="well"> {{instruction}} </div>
+		<div class="well well-sm center"> {{instruction}} </div>
 		<img src="img/{{currImg}}.png">
 	</div>
 
 	<div id="scenario">
 
-		<div class="panel panel-default">
-		  <div class="panel-heading">Scenario</div>
+		<div class="panel panel-default" ng-hide="exists">
+		  <div class="panel-heading"></div>
 		  <div class="panel-body"> {{information}} </div>
 		</div>
 	</div>
