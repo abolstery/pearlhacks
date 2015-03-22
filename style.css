@@ -6,3 +6,28 @@ body {
 	margin-bottom: 30px;
 	font-style: italic;
 }
+
+.imgbox {
+	margin-left: 20%;
+	margin-right: 25%;
+}
+
+div:focus {
+	outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.instrBox {
+	text-align: center;
+	width:100%;
+	margin-bottom: 5px;
+}
+
+.blocky {
+	
+}

@@ -1,1 +1,30 @@
 <h1> Simulator </h1>
+
+
+<div id="box" class="imgbox" ng-keydown="buttonBehavior($event)" tabindex="0">
+	<div class="instrBox"> {{instruction}} </div>
+	<img src="img/{{currImg}}.png">
+</div>
+
+<div class="modal fade" id="instructions">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Welcome to the Assault Simulation</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+        	This simulation demonstrates an experience of a sexual assault victim. There are two goals that we wish to accomplish. The first is to help you understand why a victim may be uncomfortable with physical contact. The second goal is prevention. We want you to feel what the victim feels so that you wouldn't want to do it to someone else.
+        </p>
+        <p>
+        	When you're ready, close this pop-up and follow the instructions on screen.
+        </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="closeModal()">I'm Ready.</button>
+      </div>
+    </div>
+  </div>
+</div>
