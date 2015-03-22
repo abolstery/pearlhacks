@@ -3,8 +3,12 @@ body {
 }
 
 .subheader {
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	font-style: italic;
+}
+
+.center {
+	text-align: center;
 }
 
 .imgbox {
@@ -29,5 +33,7 @@ img {
 }
 
 .blocky {
-	
+	margin-left: 23%;
+	border-left: black solid 1px;
+	padding-left: 10px;
 }
